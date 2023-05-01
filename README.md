@@ -25,7 +25,14 @@ Note: I have not included documentation here on how to configure the NT C2950 tr
     - Run at 14.0 kph for 30 secs
     - 3% Incline 12.4 kph for 1 min
     - Cool down 8.8 kph for 2 min
-  - Once the workout instructions are obtained, the treadmill speed and incline will be adjusted automatically to the required values.
+  - Once the workout instructions are obtained, the treadmill speed and incline are adjusted automatically to the required values.
+
+### Selecting a Workout in Zwift:
+
+- There are a few different ways to select a workout in Zwift. Using running mode for example, here are your options:
+  - Option 1 - Select a workout from the Zwift main screen, select a world and course, and enter the game. The workout starts immediately when the treadmill belt starts moving and speed is registered in Zwift. iFit-Wolf4 will now control your treadmill speed and incline automatically, however you do have manual override control.
+  - Option 2 - Select course from the Zwift main screen and enter the game. Next, choose a workout from the menu (hit Menu button or press E hotkey). The workout starts immediately when the treadmill belt starts moving and speed is registered in Zwift. iFit-Wolf4 will now control your treadmill speed and incline automatically, however you do have manual override control.
+  - Option 3 - Join a workout event from the Zwift main screen and enter the game. Ensure your treadmill belt is moving and speed is registered in Zwift (your avatar will walk or run on a virtual treadmill until the event starts). When the event starts, your group workout will begin. iFit-Wolf4 will now control your treadmill speed and incline automatically, however you do have manual override control.
 
 ### Files included:
 - **adb-connect.bat** (batch script to initiate an ADB connection with the treadmill. Enter the IP address of the treadmill)

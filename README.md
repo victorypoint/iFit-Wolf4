@@ -37,7 +37,7 @@ Note: I have not included documentation here on how to configure the NT C2950 tr
 ### Files included:
 - **adb-connect.bat** (batch script to initiate an ADB connection with the treadmill. Enter the IP address of the treadmill)
 - **iwolf4.vbs** (VBscript script to communicate with treadmill and launch process-image.py script for OCR)
-- **iwolf4.bat** (batch script to launch iwolf3.vbs)
+- **iwolf4.bat** (batch script to launch iwolf4.vbs)
 - **process-image.py** (Python script to take Zwift screenshot, OCR the workout speed and incline values, and output the result to file ocr-output.txt)
 - **adb.exe, AdbWinApi.dll, AdbWinUsbApi.dll, grep.exe, and tail.exe** (required support files)
 - **adb-screenshot.bat** (batch script to take a screenshot of the treadmill screen if needed)

@@ -13,7 +13,7 @@ Note: I have not included documentation here on how to configure the NT C2950 tr
 
 ### To Run iFit-Wolf4:
 
-- This solution works on a Windows PC running iFit-Wolf4 and Zwift. Before running iFit-Wolf3:
+- This solution works on a Windows PC running iFit-Wolf4 and Zwift. Before running iFit-Wolf4:
   - Ensure tredmill is powered-up and connected to Windows PC via ADB connection. Run adb-connect.bat to establish an ADB connection to the treadmill via its IP address.
   - Ensure treadmill is in manual workout mode with onscreen speed and incline controls visible.
   - Ensure Zwift is launched in "Windowed mode", is "in game" in either Run or Bike mode, and has a Zwift workout loaded and ready to start. That is, your avatar is ready to run or bike, and the Zwift workout dashboard is displayed in the upper area of the screen. 

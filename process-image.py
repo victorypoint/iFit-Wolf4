@@ -29,7 +29,7 @@ screenshot_np = np.array(screenshot)
 # Convert numpy array to a cv2 RGB image
 screenshot_cv2 = cv2.cvtColor(screenshot_np, cv2.COLOR_BGR2RGB)
 
-# Crop image to incline area (don't crop without % symbol - gives worse OCR results)
+# Crop image to incline area
 screenwidth, screenheight = screenshot.size
 col1 = int(screenwidth/3000 * 1010)
 row1 = int(screenheight/2000 * 260)

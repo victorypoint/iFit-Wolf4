@@ -19,7 +19,7 @@ Note: I have not included documentation here on how to configure the NT C2950 tr
   - Ensure Zwift is launched in "Windowed mode", is "in game" in either Run or Bike mode, and has a Zwift workout loaded and ready to start. That is, your avatar is ready to run or bike, and the Zwift workout dashboard is displayed in the upper area of the screen. 
 
 - Run iwolf4.bat. When executed, iFit-Wolf4 will:
-  - Query the treadmill for it's current incline via ADB.
+  - Query the treadmill for it's current speed and incline via ADB.
   - Query Zwift for the current workout instruction for speed and incline. It does this by taking a screenshot, and obtaining the workout instruction via OCR. Some examples of workout instructions are:
     - Warm up 7.4 kph for 6 min
     - Run at 14.0 kph for 30 secs

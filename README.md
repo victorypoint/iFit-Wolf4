@@ -7,7 +7,9 @@ This repo builds on my previous iFit-Wolf3 repo and code at https://github.com/v
 
 Note: I have not included documentation here on how to configure the NT C2950 treadmill for ADB communication, but it involves accessing the machines "Privileged Mode", turning on "Developer Options" in Android settings, and enabling "USB Debugging" mode. Accessing Privileged Mode is well documented on many websites, dependent on the treadmill model, and version of Android and iFit. Refer to my previous iFit-Wolf and iFit-Wolf2 repos for technical details on how the treadmill incline is commmunicated and manually controlled via an ADB connection. The NT C2950 treadmills embedded iFit console runs Android (currently v9 on my model). Treadmill incline is controlled by moving it's on-screen incline slider control up and down.
 
-### OCR Software Install and Setup: see my iFit-Wolf3 repo for installation instructions at https://github.com/victorypoint/iFit-Wolf3
+### OCR Software Install and Setup:
+
+-  Refer to my iFit-Wolf3 repo for installation instructions at https://github.com/victorypoint/iFit-Wolf3
 
 ### To Run iFit-Wolf4:
 

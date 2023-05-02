@@ -9,11 +9,13 @@ import cv2
 import numpy as np
 import win32gui
 import re
+from datetime import datetime
 from paddleocr import PaddleOCR
 from PIL import Image, ImageGrab
 
-# File path
+# File paths
 ocrfileName = 'ocr-output.txt'
+ocrlogFile = 'ocr-logfile.txt'
 
 # Take Zwift screenshot
 hwnd = win32gui.FindWindow(None,'Zwift') 
@@ -46,6 +48,12 @@ ocr_text = ''
 for line in result:
     for word in line:
         ocr_text += f"{word[1][0]} "
+
+# Write OCR text fo log file
+dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+#print("Timestamp: ", dt)
+with open(ocrlogFile, "a") as file:
+   file.write(f"{dt}, {ocr_text}" + "\n")
 
 # Find the speed number
 num_pattern = r'\d+(\.\d+)?'  # Regular expression pattern to match numbers with optional decimal places

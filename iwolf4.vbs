@@ -185,7 +185,10 @@ Function GetZwiftWorkout()
     GetZwiftWorkout = array(sSpeed, sIncline)
 
   else
-    GetZwiftWorkout = array("None", "None")    
+
+    'return array
+    GetZwiftWorkout = array("None", "None") 
+   
   end if 'zwift is running
 
   Set objWMIService = Nothing

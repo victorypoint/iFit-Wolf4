@@ -49,7 +49,7 @@ for line in result:
     for word in line:
         ocr_text += f"{word[1][0]} "
 
-# Write OCR text fo log file
+# Write OCR text to log file
 dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 #print("Timestamp: ", dt)
 with open(ocrlogFile, "a") as file:

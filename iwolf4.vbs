@@ -179,11 +179,13 @@ Function GetZwiftWorkout()
       metrics = Split(inputString, ",")
       sSpeed = metrics(0)
       sIncline = metrics(1)
-    end if
+    end if 'file not empty
 
     'return array
     GetZwiftWorkout = array(sSpeed, sIncline)
 
+  else
+    GetZwiftWorkout = array("None", "None")    
   end if 'zwift is running
 
   Set objWMIService = Nothing

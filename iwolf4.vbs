@@ -11,6 +11,7 @@ createobject("wscript.shell").popup "Ensure treadmill is in manual workout mode 
 
 'initialize
 set wso = createobject("wscript.shell")
+Set fso = CreateObject("Scripting.FileSystemObject")
 
 'treadmill tablet coordinates (ifit manual workout)
 speedx1 = 1845     'x pixel position of middle of speed slider
@@ -28,6 +29,12 @@ yr = year(now)
 infilename = yr & "-" & mo & "-" & dy & "_logs.txt"
 infilename2 = "/sdcard/.wolflogs/" & infilename
 'wscript.echo infilename2
+
+'delete OCR logfile if it exists
+ocrlogFile = "ocr-logfile.txt"
+If fso.FileExists(ocrlogFile) Then
+    fso.DeleteFile(ocrlogFile)
+End If
 
 'loop - process wolflog and Zwift screenshot
 Do
@@ -70,7 +77,7 @@ Do
   workout = GetZwiftWorkout()
   sSpeed = workout(0)
   sIncline = workout(1)
-  wscript.echo sSpeed, sIncline
+  'wscript.echo sSpeed, sIncline
 
   'process zwift and treadmill speed
   If sSpeed <> "None" Then 
